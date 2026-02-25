@@ -4,7 +4,7 @@ input::placeholder {
 }
 
 textarea::placeholder {
-  color: #75d08c; 
+  color: #4cb667; 
   font-style: italic;
   font-weight: 500;
 }

@@ -3,7 +3,13 @@ import "./style.css"
 
 const API = "http://localhost:5000/todos";
 
+
+
+
 export default function App() {
+
+
+
 
   const [todos, setTodos] = useState([]);
   const [form, setForm] = useState({ title: "", description: "" });
@@ -12,7 +18,6 @@ export default function App() {
   const [total, setTotal] = useState(0);
   const limit = 5;
 
-  // pagination
 
   const loadTodos = async (p = 1) => {
     const res = await fetch(`${API}?page=${p}&limit=${limit}`);
@@ -27,6 +32,7 @@ export default function App() {
   }, []);
 
 
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -84,11 +90,11 @@ export default function App() {
     marginRight: "6px",
     cursor: "pointer",
   };
-  const btnAdd = { ...btnStyle, backgroundColor: "#28a745" };      // green
-  const btnCancel = { ...btnStyle, backgroundColor: "#6c757d" };   // gray
-  const btnEdit = { ...btnStyle, backgroundColor: "#007bff" };     // blue
-  const btnDelete = { ...btnStyle, backgroundColor: "#dc3545" };   // red
-  const btnPage = { ...btnStyle, backgroundColor: "#54687b" };     // dark gray
+  const btnAdd = { ...btnStyle, backgroundColor: "#28a745" };      
+  const btnCancel = { ...btnStyle, backgroundColor: "#6c757d" };   
+  const btnEdit = { ...btnStyle, backgroundColor: "#007bff" };    
+  const btnDelete = { ...btnStyle, backgroundColor: "#dc3545" };   
+  const btnPage = { ...btnStyle, backgroundColor: "#54687b" };     
 
 
 
