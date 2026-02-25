@@ -1,0 +1,28 @@
+input::placeholder {
+  color: #5d96d3; 
+  font-weight: 500;
+}
+
+textarea::placeholder {
+  color: #75d08c; 
+  font-style: italic;
+  font-weight: 500;
+}
+body {
+  background-color: #ffffff; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 80px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+}
+
+
+
+h1 {
+  white-space: nowrap;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-size: 40px;
+}
